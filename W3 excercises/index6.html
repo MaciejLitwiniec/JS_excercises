@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <!-- Write a JavaScript program to calculate days left until next Christmas. -->
+
+  <script src="./libs/moment.js" charset="utf-8"></script>
+  <script>
+
+    var start = moment();
+    var end = moment("2017-12-24");
+    var until = end.diff(start, "days")
+
+    document.write(`There is ${until} day(s) until Christmass`);
+    
+  </script>
+
+
+  </body>
+</html>
