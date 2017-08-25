@@ -1,0 +1,41 @@
+<html>
+<head>
+	<title>none</title>
+	<script
+  		src="https://code.jquery.com/jquery-3.1.1.min.js"
+  		integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  		crossorigin="anonymous">
+  	</script>
+  	<script>
+  	$(document).ready(function(){
+  		function checkFields () {
+  			return ($("name").val() && $("email").val());
+  		}
+
+  		$("#form1").submit(function(){
+  			if(checkFields()){
+  				$.post(
+  					'test.php', $("form1").serialize(),
+  					function(data){
+  						$("#div").html(data);	
+  					}
+  				);
+  			}
+  			else alert("Wypelnij pola, podajac imie i nazwisko oraz adres email");
+  			return false;
+  		});
+  	});
+
+  	</script>
+</head>
+<body>
+	<form id="form1">
+		Imię i nazwisko <input type="text" name="name" id="name"><br>
+		Adres e-mail <input type="text" name="email" id="email"><br>
+		<input type="submit" name="submit" id="submit" value="Wyslij formularz">
+	</form>
+	<div id="div1"></div>
+</body>
+</html>
+
+<!-- kontynuowac na 299 -->

@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title>none</title>
+	</head>
+	<body>
+		<script>
+			function detectSpam (input) {
+				input = input.toLowerCase();
+				if (input.indexOf("falszywe") < 0){
+					return false;
+				} 
+				return true;
+			}
+
+			var myString = prompt("wprowadz tekst");
+			alert(detectSpam(myString));
+		</script>
+	</body>
+</html>

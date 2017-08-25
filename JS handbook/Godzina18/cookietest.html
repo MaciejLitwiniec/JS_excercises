@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Testowanie informacji cookie</title>
+	<script src="cookies.js"></script>
+	<script>
+		window.onload = function () {
+			var cookievalue = prompt("wartosc informacji cookie: ");
+			createCookie("myCookieData", cookievalue);
+		}
+	</script>
+</head>
+<body>
+	<a href="cookietest2.html">Przejdz do drugiej strony testu informacji cookie</a>
+	<div id="output"></div>
+</body>
+</html>

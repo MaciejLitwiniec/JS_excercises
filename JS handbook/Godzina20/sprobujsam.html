@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Przykladowa aplikaja AngularJS</title>
+	<style>
+		body {
+			background-color: #ddf;
+			font: 16px bold helvetica, arial, sans-serif;
+		}
+		input {
+			padding: 10px;
+		}
+		#list-container {
+			background-color: white;
+			color: #448;
+			border-radius: 25px;
+			border: 1px solid black;
+			padding: 25px;
+		}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+</head>
+<body ng-app ng-init = "departments = [
+	{name: 'Sprzedaz', contact: 'Marta Nowak' },
+	{name: 'Wsparcie', contact: 'Dawid Polak' },
+	{name: 'Produkcja', contact: 'Grzegorz Welel' },
+	{name: 'Uslugi', contact: 'Sylwia Dulska' },
+	{name: 'Administracja', contact: 'Sandra Brylska' },
+	{name: 'Ksiegowosc', contact: 'Karol Szulim' },
+	{name: 'Wysylka', contact: 'Magda Czepiec' }
+]">
+	<p>Wyszukiwanie dzialow: <input type="text" placeholder="Wprowadz lancuch wyszukiwania" ng-model="searchString"></p>
+	<div id="list-container">
+	<ul>
+		<li ng-repeat="dept in departments | filter: searchString">{{ dept.name + " (" + dept.contact + ")" }}</li>
+	</ul>
+	</div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<head>
+		<title>none</title>
+		<script>	
+			function jsonParse () {
+				var inString = prompt("Wprowadz obiekt JSON");
+				var out = "";
+				myObject = JSON.parse(inString);
+				for (i in myObject){
+					out += "Wlasciwosc: " + i + " = " + myObject[i] + '\n';
+				}
+				alert(out);
+			}
+		</script>
+	</head>
+	<body onload="jsonParse()">
+	</body>
+</html>

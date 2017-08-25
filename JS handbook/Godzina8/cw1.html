@@ -1,0 +1,19 @@
+<head>
+		<title>none</title>
+		<script>	
+		 Date.prototype.getYesterday = function () {
+		 	var day = new Date(year, month, day, hours, minutes, seconds, milliseconds);
+		 	var out = day.setDate(day.getDate()-1);
+		 	return out;
+		 };
+
+		var yesterday = new Date(); 
+
+		</script>
+	</head>
+	<body>
+		<script>
+		alert(yesterday.out)
+		</script>
+	</body>
+</html>

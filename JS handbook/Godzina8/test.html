@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<title>none</title>
+		<script>	
+			String.prototype.backwords = function () {
+				var out = '';
+				for (var i = this.length-1; i>=0; i--){
+					out += this.substr(i, 1);
+				}
+				return out;
+			}
+		</script>
+	</head>
+	<body>
+		<script>
+			var inString = prompt("wprowadz lancuch");
+			document.write(inString.backwords());
+		</script>
+	</body>
+</html>

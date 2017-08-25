@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <div>
+      <button type="button" name="button" onclick="printPage()">Click to print page</button>
+      <br><br>
+    </div>
+
+    <script type="text/javascript" src="http://www.datejs.com/build/date.js"></script>
+
+    <script type="text/javascript">
+    //Excercise 1
+    var today = new Date();
+    var weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+    var dayName = weekday[today.getDay()];
+    var hourUSformat = today.toLocaleString('en-US', { hour: 'numeric', hour12: true });
+    var minutes = today.getMinutes();
+    var seconds = today.getSeconds();
+
+    document.write(`Today is ${dayName}.`);
+    document.write('<br>');
+    document.write(`Current time is : ${hourUSformat} : ${minutes} : ${seconds}`);
+    document.write('<br><br>');
+
+
+    //Excercise 2 - print current page
+    function printPage(){
+      window.print()
+    };
+
+    //Excercise 3
+    //Write a JavaScript program to get the current date.
+    //mm-dd-yyyy, mm/dd/yyyy or dd-mm-yyyy, dd/mm/yyyy
+
+    var day = new Date();
+    document.write(`${day.toString('MM-dd-yyyy')}  ${day.toString('MM/dd/yyyy')}`);
+    document.write(`<br>`);
+    document.write(`${day.toString('dd-MM-yyyy')}  ${day.toString('dd/MM/yyyy')}`);
+    document.write(`<br><br>`);
+
+
+    //Excercise 4
+    //program to find the area of a triangle where lengths of the three of its sides are 5, 6, 7
+
+    var a = 5;
+    var b = 6;
+    var c =7;
+    var p = (a + b + c)/2;
+    var heron = Math.sqrt(p * (p - a) * (p - b) * (p - c));
+    document.write(`Area of a triangle: ${heron}`);
+    document.write('<br><br>')
+
+    //Excercise 5. Write a JavaScript program to rotate the string 'w3resource'
+    //in right direction by periodically removing one letter from the end of the string and attaching it to the front.
+    var text = 'w3resource';
+    var textLenght = text.length;
+
+    var letter = "";
+    var rest = "";
+
+    for (i = 0; i < textLenght; i++){
+      letter = text.slice(textLenght - 1, textLenght);
+      rest = text.slice(0, textLenght - 1);
+      text = letter + rest;
+
+      document.write(text);
+      document.write('<br>');
+    }
+
+
+    </script>
+
+
+
+  </body>
+</html>

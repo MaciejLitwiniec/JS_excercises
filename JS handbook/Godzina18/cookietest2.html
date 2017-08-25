@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>testowanie informacji cookie</title>
+	<script src="cookies.js"></script>
+	<script>
+		window.onload = function(){
+			document.getElementById("output").innerHTML = "wartosc informacji cookie: " + getCookie("myCookieData");
+		}
+	</script>
+</head>
+<body>
+	<a href="cookietest.html">Powrot do pierwszej strony testu informacji cookie</a><br>
+	<div id="output"></div>
+</body>
+</html>
