@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+
+    console.log('--------------------------------------');
+    for (var year = 2014; year <= 2050; year++){
+      //stores consecutive years
+      var d = new Date(year, 0, 1);
+        //checks if Sunday (0 based indexing)
+        if(d.getDay() == 0){
+          console.log(`in ${year} 1st of January was Sunday`);
+        }
+    }
+    console.log('--------------------------------------');
+
+    </script>
+  </body>
+</html>

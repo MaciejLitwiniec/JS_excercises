@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>find a leap year</title>
+  </head>
+  <body>
+    <script>
+
+     year = window.prompt("type year");
+
+     alert(leapYear(year));
+
+    function leapYear(year){
+      return ((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0);
+    }
+    </script>
+  </body>
+</html>
