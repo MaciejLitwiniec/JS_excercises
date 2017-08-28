@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+
+    var file1 = 'document.docx';
+    var file2 = 'excel.xls';
+
+    getFileExtension(file1);
+    getFileExtension(file2);
+
+    function getFileExtension(file) {
+      console.log(file.split('.').pop());
+    };
+
+    </script>
+  </body>
+</html>
