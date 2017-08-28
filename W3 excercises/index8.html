@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <!-- Write a JavaScript program to convert temperatures to and from Celsius, Fahrenheit. -->
+
+    <script type="text/javascript">
+        function convertToF(celsius) {
+          let tempCel = celsius;
+          let celToFar = tempCel * (9/5) + 32;
+          console.log(celToFar);
+
+          document.write(`${tempCel}&#8451 is ${celToFar}&#x2109 <br>`);
+        }
+
+        function convertToC(fahrenheit) {
+          let tempFar = fahrenheit;
+          let farToCel = (tempFar -32) * (5/9);
+          console.log(farToCel);
+
+          document.write(`${tempFar}&#x2109 is ${farToCel}&#8451 <br> `);
+        }
+
+        convertToF(60);
+        convertToC(45);
+    </script>
+  </body>
+</html>
