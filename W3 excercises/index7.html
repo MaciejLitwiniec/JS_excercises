@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="./libs/jquery-3.2.1.min.js"></script>
+  </head>
+  <body>
+    <!-- Write a JavaScript program to calculate multiplication and division of two numbers (input from user).  -->
+
+    <form class="" action="" id="calculationForm">
+      <div>
+        1st number: <input type="text" name="first" value="" autofocus>
+      </div>
+      <div>
+        2nd number: <input type="text" name="second" value="">
+      </div>
+      <div>
+        <button type="button" name="button" onclick="divide()">Divide</button>
+        <button type="button" name="button" onclick="multiply()">Multiply</button>
+      </div>
+      <br>
+      <div>
+        Result <input type="text" name="result" value="">
+      </div>
+    </form>
+
+    <script>
+      function divide() {
+        var first = $('#calculationForm').find('input[name="first"]').val();
+        var second = $('#calculationForm').find('input[name="second"]').val();
+        console.log(first, second);
+
+        var calculation = first / second;
+        console.log(calculation);
+
+        $('#calculationForm').find('input[name="result"]').val(calculation);
+      }
+
+      function multiply() {
+        var first = $('#calculationForm').find('input[name="first"]').val();
+        var second = $('#calculationForm').find('input[name="second"]').val();
+        console.log(first, second);
+
+        var calculation = first * second;
+        console.log(calculation);
+
+        $('#calculationForm').find('input[name="result"]').val(calculation);
+      }
+    </script>
+
+
+  </body>
+</html>
