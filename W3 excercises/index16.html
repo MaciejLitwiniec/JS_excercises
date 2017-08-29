@@ -39,6 +39,24 @@
       }
     }
 
+    console.log('----------------');
+    //Write a JavaScript program to create a new string adding "Py" in
+    //front of a given string. If the given string begins with "Py" then return the original string.
+
+    //console.log(concat("abc"));
+    console.log(concat("Pyro"));
+    console.log(concat("abc"));
+
+    function concat(text){
+      var input = text.substring(0, 2);
+
+      if (input === "Py") {
+        return text;
+      } else {
+        return "Py" + text;
+      }
+    }
+
     </script>
 
   </body>
