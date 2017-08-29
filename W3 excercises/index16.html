@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <script>
+    //Write a JavaScript program to check a given integer is within 20 of 100 or 400.
+
+    console.log(checkNumbers(400));
+
+    function checkNumbers(value){
+      if (value >= 0 && value <= 20){
+        return "within 20";
+      } else if (value > 20 && value <= 100) {
+        return "within 100";
+      } else if (value > 100 && value <= 400) {
+        return "within 400";
+      } else {
+        return "more than 400 or less than 0";
+      }
+    }
+
+    console.log('----------------');
+    //Write a JavaScript program to check from two given integers, if one is positive and one is negative.
+
+    console.log(ifPositiveOrNegative(-2, -2));
+    console.log(ifPositiveOrNegative(-2, 2));
+    console.log(ifPositiveOrNegative(2, -2));
+    console.log(ifPositiveOrNegative(2, 2));
+
+    function ifPositiveOrNegative(x, y){
+      if((x > 0 && y < 0) || (x < 0 && y > 0)){
+        return true;
+      } else {
+        return false;
+      }
+    }
+
+    </script>
+
+  </body>
+</html>
