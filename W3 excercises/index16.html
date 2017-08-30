@@ -123,6 +123,24 @@
       }
     }
 
+    //Write a JavaScript program to create a new string from a given string
+    //taking the last 3 characters and added at both the front and back.
+    //The string length must be 3 or more.
+    console.log('----------------');
+
+    console.log(modifier('Maciej'));
+    console.log(modifier(''));
+
+    function modifier(text){
+      if (text.length <= 3){
+        return `Text is too short. # of chars: ${text.length}`;
+      }
+
+      var textPartial = text.substring(text.length - 3, text.length);
+      return textPartial + text + textPartial;
+    }
+
+
 
     </script>
 
