@@ -99,6 +99,29 @@
       return firstLetter + text + firstLetter;
     }
 
+    console.log('----------------');
+    //Write a JavaScript program check if a given positive number is
+    //a multiple of 3 or a multiple of 7.
+
+    console.log(multiple3or7(3));
+    console.log(multiple3or7(7));
+    console.log(multiple3or7(21));
+    console.log(multiple3or7(0));
+    console.log(multiple3or7(2));
+
+    function multiple3or7(val){
+      if (val <= 0){
+        return `${val} equals or less is than 0`;
+      } else if ((val % 3 === 0) && (val % 7 === 0)) {
+        return `${val} is multiplication of 3 and 7`;
+      } else if (val % 3 === 0) {
+        return `${val} is multiplication of 3`;
+      } else if (val % 7 === 0) {
+        return `${val} is multiplication of 7`;
+      } else {
+        return `${val} is not a multiplication of 3 or 7`
+      }
+    }
 
 
     </script>
