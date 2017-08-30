@@ -86,6 +86,21 @@
       console.log(combine);
     }
 
+    console.log('----------------');
+    //Write a JavaScript program to create a new string from a given string
+    //with the first character of the given string added at the front and back.
+
+    console.log(textBuilder('Maciej'));
+
+    function textBuilder(text){
+      var textLength = text.length;
+      var firstLetter = text.substring(0, 1);
+
+      return firstLetter + text + firstLetter;
+    }
+
+
+
     </script>
 
   </body>
