@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+
+    //Write a JavaScript program to check if three given integer values
+    //are in the range 50..99 (inclusive). Return true if one or more of them are in the said range.
+
+    console.log(withinRange(50, 60, 70));
+    console.log(withinRange(40, 60, 70));
+    console.log(withinRange(50, 20, 70));
+    console.log(withinRange(50, 20, 100));
+    console.log(withinRange(500, 600, 700));
+
+    function withinRange(val1, val2, val3){
+      if ((val1 >= 50 && val1 <= 99) || (val2 >= 50 && val2 <= 99) || (val3 >= 50 && val3 <= 99)) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+
+
+    console.log('----------------');
+
+    //Write a JavaScript program to check if a string "Script" presents at 5th
+    //(index 4) position in a given string, if "Script" presents in the string
+    //return the string without "Script" otherwise return the original one.
+
+    console.log(manipulateString('JavaScript'));
+    console.log(manipulateString('CoffeScript'));
+
+    function manipulateString(text){
+      if(text.substring(4, 10) === 'Script') {
+        return text.substring(0, 4) + text.substring(10, text.length);
+      } else {
+        return text;
+      }
+    }
+
+    </script>
+  </body>
+</html>
