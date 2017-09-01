@@ -105,10 +105,9 @@
       // }
 
     }
-
+    console.log('-------------------');
     //Write a JavaScript program to find the larger number from the two given
     //positive integers, the two numbers are in the range 40..60 inclusive.
-    console.log('-------------------');
     console.log(findLarger(55, 50));
     console.log(findLarger(25, 31));
     console.log(findLarger(70, 91));
@@ -120,6 +119,19 @@
       }
       return Math.max(val1, val2);
     }
+
+    console.log('-------------------');
+    //Write a JavaScript program to check a given string contains
+    //2 to 4 numbers of a specified character.
+    console.log(howManyContains("some text", "e"));
+
+    function howManyContains(text, char){
+      var re = new RegExp(`[^${char}]`,"g");
+      var times = text.replace(re, "").length;
+      return times;
+    }
+
+
 
     </script>
   </body>
