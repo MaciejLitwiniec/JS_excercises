@@ -109,8 +109,17 @@
     //Write a JavaScript program to find the larger number from the two given
     //positive integers, the two numbers are in the range 40..60 inclusive.
     console.log('-------------------');
+    console.log(findLarger(55, 50));
+    console.log(findLarger(25, 31));
+    console.log(findLarger(70, 91));
 
-    
+
+    function findLarger(val1, val2){
+      if(!((val1 && val2 >= 40) && (val1 && val2 <= 60))){
+        return `${val1} and ${val2} are not in range of 40...60`;
+      }
+      return Math.max(val1, val2);
+    }
 
     </script>
   </body>
