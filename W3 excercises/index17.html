@@ -73,8 +73,44 @@
     }
 
 
-    console.log('-------------------')
+    console.log('-------------------');
+    //Write a JavaScript program to check if two numbers are in range 40..60 or in the range 70..100 inclusive.
+    console.log(ifInRange(52, 53));
+    console.log(ifInRange(73, 80));
+    console.log(ifInRange(12, 123));
 
+    function ifInRange(val1, val2){
+      if((val1 && val2 >= 40) && (val1 && val2 <= 60)){
+        return `${val1} and ${val2} are in range of 40...60`;
+      } else if ((val1 && val2 >= 70) && (val1 && val2 <= 100)) {
+        return `${val1} and ${val2} are in range of 70...100`;
+      } else {
+        return `${val1} and ${val2} are not in range of 40...60 nor 70...100`;
+      }
+
+      // if(val1 >= 40 && val1 <= 60){
+      //   console.log(`${val1} is in range 40...60`);
+      // } else if (val1 >= 70 && val1 <= 100) {
+      //   console.log(`${val1} is in range 70...100`);
+      // } else {
+      //   console.log(`${val1} is in none of ranges`);
+      // }
+      //
+      // if(val2 >= 40 && val2 <= 60){
+      //   console.log(`${val2} is in range 40...60`);
+      // } else if (val2 >= 70 && val2 <= 100) {
+      //   console.log(`${val1} is in range 70...100`);
+      // } else {
+      //   console.log(`${val2} is in none of ranges`);
+      // }
+
+    }
+
+    //Write a JavaScript program to find the larger number from the two given
+    //positive integers, the two numbers are in the range 40..60 inclusive.
+    console.log('-------------------');
+
+    
 
     </script>
   </body>
