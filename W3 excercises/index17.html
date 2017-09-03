@@ -131,7 +131,46 @@
       return times;
     }
 
+    //Write a JavaScript program to check if the last digit of
+    //the three given positive integers is same.
+    console.log('-------------------');
 
+    isLastDigitSame(360, 20, 50);
+    console.log('---');
+    isLastDigitSame(361, 22, 3);
+    console.log('---');
+    isLastDigitSame(361, 0, 3);
+
+    function isLastDigitSame(dig1, dig2, dig3){
+      if ((dig1 >= 0 && dig2 >= 0 && dig3 >= 0)){
+        var dig1S = dig1.toString();
+        var dig2S = dig2.toString();
+        var dig3S = dig3.toString();
+
+        var dig1L = dig1S.length;
+        var dig2L = dig2S.length;
+        var dig3L = dig3S.length;
+
+        var lastDig1 = dig1S.slice(dig1L - 1, dig1L);
+        var lastDig2 = dig2S.slice(dig2L - 1, dig2L);
+        var lastDig3 = dig3S.slice(dig3L - 1, dig3L);
+
+        console.log(`Last digit of ${dig1} is ${lastDig1}`);
+        console.log(`Last digit of ${dig2} is ${lastDig2}`);
+        console.log(`Last digit of ${dig3} is ${lastDig3}`);
+
+        if(lastDig1 === lastDig2 && lastDig2 === lastDig3){
+          return console.log('last 3 digs are same');
+          //return true;
+        } else {
+          return console.log('last 3 digs are not same');
+          //return false;
+        }
+      } else {
+        return console.log(`Value1(${dig1}) or Value2(${dig2}) or Value3(${dig3}) is lower than 0`);
+        //return null;
+      }
+    }
 
     </script>
   </body>
