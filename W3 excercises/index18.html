@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+
+      //Write a JavaScript program to create new string with first 3 characters
+      //are in lower case. If the string length is less than 3 convert all the characters in upper case.
+
+      console.log(stringConverter('ABCeTedt'));
+      console.log(stringConverter('AbceTedt'));
+      console.log(stringConverter('eTe'));
+
+      function stringConverter(text){
+        var newText = text.toString()
+
+        if(newText.length <= 3){
+          var upperCase = newText.toUpperCase();
+          return upperCase;
+        } else {
+          var lowerCase = newText.slice(0,3).toLowerCase();
+          var restOfString = newText.slice(3, newText.length)
+          return lowerCase + restOfString;
+        }
+
+      }
+
+      console.log('-------------------');
+      
+    </script>
+  </body>
+</html>
