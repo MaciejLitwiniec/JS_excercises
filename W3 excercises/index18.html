@@ -67,7 +67,49 @@
       }
 
       console.log('-------------------');
-      
+      //40. Write a JavaScript program to check from two given integers if
+      //either one is 8 or their sum or difference is 8.
+
+      console.log(opsWith8(8, 1));
+      console.log(opsWith8(1, 8));
+      console.log(opsWith8(4, 4));
+      console.log(opsWith8(9, 1));
+      console.log(opsWith8(5, 2));
+
+      function opsWith8 (val1, val2){
+        if(val1 === 8 || val2 === 8){
+          return true;
+        } else if ((val1 + val2)  === 8 || (val1 - val2) === 8) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+
+      console.log('-------------------');
+      //41. Write a JavaScript program to check three given numbers,
+      //if the three numbers are same return 30 otherwise return 40 and if
+      //two numbers are same return 20.
+
+      console.log(howManySame(5, 5, 5));
+      console.log(howManySame(5, 2, 5));
+      console.log(howManySame(1, 2, 5));
+
+      function howManySame(val1, val2, val3){
+        var newArray = [val1, val2, val3];
+        var counts = {};
+        newArray.forEach(function(x) {
+           counts[x] = (counts[x] || 0)+1;
+          });
+        console.log(counts);
+        if(counts[Object.keys(counts)[0]] == 3 || counts[Object.keys(counts)[1]] == 3 || counts[Object.keys(counts)[2]] == 3){
+          return 30;
+        } else if (counts[Object.keys(counts)[0]] == 2 || counts[Object.keys(counts)[1]] == 2 || counts[Object.keys(counts)[2]] == 2) {
+          return 20;
+        } else {
+          return 40;
+        }
+      }
 
     </script>
   </body>
