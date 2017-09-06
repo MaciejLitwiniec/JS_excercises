@@ -68,9 +68,15 @@
         }
       }
 
+      console.log('-------------------');
       //47. Write a JavaScript program to check if a number in the range 40..10000
       //inclusive presents in two number (in same range).
       //For example 40 presents in 400 and 4000
+
+      console.log(test_digit(40, 4000));
+      console.log(test_digit(80, 320));
+      console.log(test_digit(89, 4000));
+
 
       function test_digit(x, y) {
         let x_div = parseInt(x / 40),
@@ -81,10 +87,16 @@
               x_div === y_mod || x_mod === y_div;
       }
 
+      //48. Write a JavaScript program to reverse a given string.
       console.log('-------------------');
-      console.log(test_digit(40, 4000));
-      console.log(test_digit(80, 320));
-      console.log(test_digit(89, 4000));
+
+      console.log(reverseString('Hello'));
+      console.log(reverseString('Maciej'));
+
+      function reverseString(str){
+        return str.split("").reverse().join("");
+      }
+
 
     </script>
   </body>
