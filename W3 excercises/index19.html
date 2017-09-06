@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+      //44. Write a JavaScript program to check from three given integers that if a
+      //number is greater than or equal to 20 and less than one of the others
+      function lessby20_others(x, y, z) {
+        return (Math.abs(x - y) >= 20) ||
+               (Math.abs(x - z) >= 20) ||
+               (Math.abs(y - z) >= 20);
+      }
+
+      console.log(lessby20_others(23, 45, 10));
+      console.log(lessby20_others(23, 23, 10));
+      console.log(lessby20_others(21, 66, 75));
+
+      console.log('-------------------');
+      //45. Write a JavaScript program to check two given integer values and
+      //return true if one of the number is 15 or if their sum or difference is 15.
+
+      console.log(ops_with15(15, 1));
+      console.log(ops_with15(1, 15));
+      console.log(ops_with15(1, 14));
+      console.log(ops_with15(1, 16));
+      console.log(ops_with15(1, 99));
+
+      function ops_with15(val1, val2){
+        if(val1 === 15 || val2 === 15){
+          return true;
+        } else if(val1 + val2 === 15) {
+          return true;
+        } else if (Math.abs(val1 - val2) === 15) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+
+    </script>
+  </body>
+</html>
