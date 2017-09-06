@@ -130,6 +130,26 @@
         }
       }
 
+      console.log('-------------------');
+      //42. Write a JavaScript program to check if three given numbers (integers)
+      //are increasing in strict mode and flag is "false", however if "true" is false
+      //the numbers will in soft mode.  Go to the editor
+      //Note: Strict mode -> 10, 15, 31 : Soft mode -> 24, 22, 31 or 22, 22, 31
+
+      console.log(strictOrSoft(10,15,31, "True"));
+      console.log(strictOrSoft(24,22,31, "False"));
+      console.log(strictOrSoft(22,22,31, "False"));
+
+      function strictOrSoft(x, y, z, flag){
+        if (flag==true) {
+          return y > x && z > y;
+        } else {
+            return z > y;
+        }
+      }
+
+
+
     </script>
   </body>
 </html>
