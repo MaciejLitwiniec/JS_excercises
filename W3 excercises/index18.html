@@ -111,6 +111,25 @@
         }
       }
 
+      console.log('-------------------');
+      //41. Write a JavaScript program to check three given numbers,
+      //if the three numbers are same return 30 otherwise return 40 and if
+      //two numbers are same return 20.
+
+      console.log(howManyIsSame(5, 5, 5));
+      console.log(howManyIsSame(5, 2, 5));
+      console.log(howManyIsSame(1, 2, 5));
+
+      function howManyIsSame(val1, val2, val3){
+        if(val1 === val2 && val2 === val3){
+          return 30;
+        } else if (val1 === val2 || val1 === val3 || val2 === val3){
+          return 20;
+        } else {
+          return 40;
+        }
+      }
+
     </script>
   </body>
 </html>
