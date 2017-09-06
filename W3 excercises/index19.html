@@ -40,6 +40,34 @@
         }
       }
 
+      console.log('-------------------');
+      //46. Write a JavaScript program to check two given non-negative
+      //integers and if one of the number (not both) is multiple of 7 or 11.
+
+      console.log(multiple7or11(22, 14)); //false
+      console.log(multiple7or11(22, 13)); //true
+      console.log(multiple7or11(20, 14)); //true
+      console.log(multiple7or11(29, 13)); //false
+      console.log(multiple7or11(0, -1)); //null
+
+      function multiple7or11(val1, val2){
+        if(val1 > 0 && val2 > 0){
+          if(val1 % 7 == 0 || val1 % 11 == 0){
+            return false;
+          } else if (val1 % 7 == 0 || val1 % 11 == 0) {
+            return true;
+          } else if (val2 % 7 == 0 || val2 % 11 == 0) {
+            return true;
+          } else if ((val1 % 7 == 0 || val1 % 11 == 0) && (val2 % 7 == 0 || val2 % 11 == 0)) {
+            return false;
+          } else {
+            return false;
+          }
+        } else {
+          return null;
+        }
+      }
+
     </script>
   </body>
 </html>
