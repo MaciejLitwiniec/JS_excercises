@@ -101,6 +101,7 @@
       //49. Write a JavaScript program to replace every character in a given
       //string with the character following it in the alphabet.
 
+
       function replaceLetter(str){
         var alpha = "abcdefghijklmnopqrstuvwxyz";
         var new_str = "";
@@ -114,6 +115,42 @@
           }
         }
       }
+
+      console.log('-------------------');
+      //50. Write a JavaScript program to capitalize the first letter of each word of a given string.
+
+      capLetter("maciej litwiniec");
+      capLetter("abc def")
+
+      function capLetter(str) {
+        var elements = str.split(" ");
+
+        elements.forEach(convertLetter);
+
+        function convertLetter(item, index){
+            var converted = item.charAt(0).toUpperCase() + item.slice(1);
+            console.log(converted);
+        }
+      }
+
+      console.log('++++');
+      console.log(capital_letter("Write a JavaScript program to capitalize the first letter of each word of a given string."));
+
+      function capital_letter(str){
+        var str = str.split(" ");
+
+        for(var i = 0; i < str.length; i++){
+          str[i] = str[i][0].toUpperCase() + str[i].substr(1);
+        }
+
+        return str.join(" ");
+      }
+
+      console.log('-------------------');
+      //51
+
+
+
     </script>
   </body>
 </html>
