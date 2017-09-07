@@ -147,8 +147,44 @@
       }
 
       console.log('-------------------');
-      //51
+      //51. Write a JavaScript program to convert a given number to hours and minutes.
 
+     console.log(convertToTime(245));
+     console.log(convertToTime(322));
+
+      function convertToTime(num){
+        var hours = Math.floor(num/60);
+        var minutes = num % 60;
+        return `${hours}:${minutes}`;
+      }
+
+      console.log('-------------------');
+      //52. Write a JavaScript program to convert the letters of a given string in alphabetical order.
+      console.log(sortLetters("maciej"));
+      console.log(sortLetters("monika"));
+
+      function sortLetters(text){
+        var newText = text.split("").sort().join("");
+        return newText;
+      }
+
+      console.log('++++');
+      console.log(sortByAlphabeth("Maciej"));
+      console.log(sortByAlphabeth("Monika"));
+
+      function sortByAlphabeth(str){
+        var arr = str.split("");
+
+        function sorter(a, b){
+          const aToLowerCase = a.toLowerCase();
+          const bToLowerCase = b.toLowerCase();
+          if(aToLowerCase < bToLowerCase) return -1;
+          if(aToLowerCase > bToLowerCase) return 1;
+          return 0;
+        }
+        arr.sort(sorter);
+        return arr.join("");
+      }
 
 
     </script>
