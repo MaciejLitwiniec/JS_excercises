@@ -18,6 +18,26 @@
 
     console.log("------------------------------");
     //55. Write a JavaScript program to check if a given string contains equal number of p's and t's present.
+    console.log(numberofPandT("pt")); //true
+    console.log(numberofPandT("t")); //false
+    console.log(numberofPandT("p")); //false
+    console.log(numberofPandT("aa")); //false
+    console.log(numberofPandT("ttpp")); //true
+
+    function numberofPandT(str){
+      var str_p = str.replace(/[^p]/g, "");
+      var str_t = str.replace(/[^t]/g, "");
+
+      var p_num = str_p.length;
+      var t_num = str_t.length;
+
+      if (p_num === 0 && t_num === 0) {
+        return false;
+      } else {
+        return p_num === t_num;
+      }
+    }
+
 
     //56. Write a JavaScript program to divide two positive numbers and return a string with properly formatted commas.
 
