@@ -1,0 +1,28 @@
+/*
+selector {
+  property: value;
+}
+*/
+h1 {
+  color: red;
+  /*border-color: purple;
+  border-width: 5px;
+  border-style: solid;*/
+  border: purple 5px solid;
+}
+li {
+  color: orange;
+}
+
+h4 {
+  color: purple;
+  background: rgb(255, 100, 80);
+}
+
+body {
+  background: grey;
+  /*background: url(https://d2jd5cd93sjelr.cloudfront.net/spree/images/34243/product/f2002235-2_2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;*/
+
+}
