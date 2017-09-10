@@ -186,6 +186,33 @@
         return arr.join("");
       }
 
+      console.log('-------------------');
+      //53. Write a JavaScript program to check if the characters a and b are
+      //separated by exactly 3 places anywhere (at least once) in a given string.
+      console.log(findSpace("ddda   bldksaldksa"));
+      console.log(findSpace("dddadddbldksaldksa"));
+      console.log(findSpace("dddabldksaldksa"));
+
+      function findSpace(text){
+        var srchRes = text.match(/a...b/);
+        if(srchRes === null){
+          return false;
+        } else {
+          return true;
+        }
+
+      }
+
+      console.log('++++');
+      console.log(ab_Check("Chainsbreak"));
+      console.log(ab_Check("pane borrowed"));
+      console.log(ab_Check("abCheck"));
+
+      function ab_Check(str){
+        return (/a...b/).test(str) || (/b...a/).test(str);
+      }
+
+
 
     </script>
   </body>
