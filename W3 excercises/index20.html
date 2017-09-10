@@ -8,7 +8,15 @@
 
     <script>
     //54. Write a JavaScript program to count the number of vowels in a given string.
+    console.log(getVowels('Maciej'));
+    console.log(getVowels('bbbbbbb'));
 
+    function getVowels(str) {
+      var m = str.match(/[aeiou]/gi);
+      return m === null ? 0 : m.length;
+    }
+
+    console.log("------------------------------");
     //55. Write a JavaScript program to check if a given string contains equal number of p's and t's present.
 
     //56. Write a JavaScript program to divide two positive numbers and return a string with properly formatted commas.
