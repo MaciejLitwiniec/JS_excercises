@@ -1,0 +1,45 @@
+<!-- radio button -->
+<!-- select tag -->
+<!-- textarea tag -->
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Input demos</title>
+  </head>
+  <body>
+    <input type="radio" name="" value="">
+    <input type="checkbox" name="" value="">
+
+    <br>
+    <p>Which one do you choose?</p>
+    <form>
+      <!--
+      1. Binded together with form
+      2. for-id match for screenreaders
+      3. name binds radio buttons so only one choice is available
+      4. value is provided in query string
+      5. button submits by default
+     -->
+      <label for="dogs">Dogs: </label>
+      <input id="dogs" name="petChoice" value="dogs" type="radio">
+
+      <label for="cats">Cat:</label>
+      <input id="cats" name="petChoice" value="cats"  type="radio">
+
+      <p>What is your current mood?</p>
+      <select name="color">
+        <option value="happy">:)</option>
+        <option value="neutral">:|</option>
+        <option value="sad">:()</option>
+      </select>
+      <br><br>
+      <textarea name="paragraph" rows="10" cols="10" placeholder="type some text"></textarea>
+      <br><br>
+      <button>Go!</button>
+    </form>
+
+  </body>
+</html>
