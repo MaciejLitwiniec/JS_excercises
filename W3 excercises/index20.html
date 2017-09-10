@@ -38,10 +38,19 @@
       }
     }
 
-
     //56. Write a JavaScript program to divide two positive numbers and return a string with properly formatted commas.
+    function division_string(n1, n2) {
+      if (n1<=0 || n2<=0) return false;
 
+      var div = Math.round(n1 / n2).toString(),
+        result_array = div.split("");
 
+      if (div >= 1000){
+        for (var i = div.length - 3; i > 0; i -= 3) {
+            result_array.splice(i, 0, ",");
+        }
+      }
+    }
     </script>
   </body>
 </html>
