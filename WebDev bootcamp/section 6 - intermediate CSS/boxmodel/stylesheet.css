@@ -1,0 +1,25 @@
+p {
+  /*Content - Width and Height*/
+  /*50% of parent element -> body*/
+  width: 50%;
+  /*height: 300px;*/
+
+  /*Border*/
+  border: 2px solid blue;
+
+  /*Padding*/
+  /*padding: 10px;*/
+  padding-left: 40px;
+
+  /*Margin*/
+  /*margin: 100px;*/
+  /*margin-top: 200px;*/
+  /*margin: 100px 50px 250px 70px;*/
+  margin: 0 auto 0 auto;
+  /*need px, unless 0*/
+
+  /*blue - content
+  green - padding
+  orange - margin
+  ?purple? - border*/
+}
