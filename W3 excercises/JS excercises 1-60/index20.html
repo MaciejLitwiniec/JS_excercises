@@ -79,10 +79,29 @@
       }
     }
 
+    console.log("------------------------------");
     //59. Write a JavaScript program to extract the first half of a string of even length.
-    //60. Write a JavaScript program to create a new string without the first and last character of a given string.
-    //61. Write a JavaScript program to concatenate two strings except their first character.
+    console.log(splitHalf("abcabc"));
 
+    function splitHalf(text){
+      if(text.length % 2 == 0){
+        return text.slice(0, text.length / 2);
+      } else {
+        return text;
+      }
+    }
+
+    console.log("------------------------------");
+    //60. Write a JavaScript program to create a new string without the first and last character of a given string.
+    console.log(cutString("Maciej"));
+
+    function cutString(text){
+      if(text.length <= 1){
+        return false;
+      } else {
+        return text.slice(1, text.length - 1);
+      }
+    }
 
     </script>
   </body>
