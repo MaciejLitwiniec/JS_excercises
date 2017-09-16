@@ -55,7 +55,6 @@
 
     console.log("------------------------------");
     //57. Write a JavaScript program to create a new string of specified copies (positive number) of a given string.
-
     console.log(provideCopy("some text", 3));
 
     function provideCopy(text, n){
@@ -66,8 +65,20 @@
       }
     }
 
+    console.log("------------------------------");
+    //58. Write a JavaScript program to create a new string of 4 copies of the last 3 characters of a given original string.
+    //The length of the given string must be 3 and above.
+    console.log(stringSubstringer("text to be copied"));
 
-    //58. Write a JavaScript program to create a new string of 4 copies of the last 3 characters of a given original string. The length of the given string must be 3 and above.
+    function stringSubstringer(text){
+      if(text.length < 3){
+        return false;
+      } else {
+        var sliced = text.slice(text.length - 3, text.length);
+        return sliced.repeat(4);
+      }
+    }
+
     //59. Write a JavaScript program to extract the first half of a string of even length.
     //60. Write a JavaScript program to create a new string without the first and last character of a given string.
     //61. Write a JavaScript program to concatenate two strings except their first character.
