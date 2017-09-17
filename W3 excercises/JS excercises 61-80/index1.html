@@ -33,7 +33,7 @@
      }
 
 
-     console.log("---------------------");
+     console.log("63. ---------------------");
      //63. Write a JavaScript program to create a string using the middle three
      //characters of a given string of odd length. The string length must be greater or equal to three.
      console.log(stringBuilder("Ma"));
@@ -53,9 +53,37 @@
        }
      }
 
+     console.log("64a. ---------------------");
      //64. Write a JavaScript program to concatenate two strings and return
      //the result. If the length of the strings are not same then remove the characters from the longer string.
 
+     console.log(concatStrings1("tekst", "tekst"));
+     console.log(concatStrings1("tekst1", "tekst"));
+     console.log(concatStrings1("tekst", "tekstaaa"));
+
+     function concatStrings1 (text1, text2) {
+
+       var differenceT1_T2 = text1.length - text2.length;
+
+       if (differenceT1_T2 > 0){
+         return text1.substr(0, text1.length - differenceT1_T2) + " " + text2;
+       } else if (differenceT1_T2 == 0) {
+         return text1 + " " + text2;
+       } else {
+         return text1 + " " + text2.substr(0, text2.length + differenceT1_T2);
+       }
+     }
+
+     //solution by w3resource
+     console.log("64b. ---------------------");
+     console.log(concatStrings2("tekst", "tekst"));
+     console.log(concatStrings2("tekst1", "tekst"));
+     console.log(concatStrings2("tekst", "tekstaaa"));
+
+     function concatStrings2 (text1, text2){
+       const m = Math.min(text1.length, text2.length);
+       return text1.substr(text1.length - m) + text2.substring(text2.length - m);
+     }
 
      //65. Write a JavaScript program to test if a string end with "Script". The string length must be greater or equal to 6.
 
