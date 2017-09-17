@@ -86,8 +86,41 @@
      }
 
      //65. Write a JavaScript program to test if a string end with "Script". The string length must be greater or equal to 6.
+     console.log("65. ---------------------");
+     console.log(ifScript("1char"));
+     console.log(ifScript("JavaScript"));
+     console.log(ifScript("CoffeScript"));
+
+     function ifScript(text){
+      if (text.length < 6) {
+        return false;
+      } else {
+        if (text.substr(text.length - 6) == "Script") {
+          //console.log(text.substr(text.length - 6));
+          return true;
+        } else {
+          //console.log(text.substr(text.length - 6));
+          return false;
+        }
+      }
+     }
+
+     //66. Write a JavaScript program to display the city name if the string
+     //begins with "Los" or "New" otherwise return blank.
 
 
+
+     //67. Write a JavaScript program to create a new string from a given string,
+     //removing the first and last characters of the string if the first or last
+     //character are 'P'. Return the original string if the condition is not satisfied.
+
+     //68. Write a JavaScript program to create a new string using the first and
+     //last n characters from a given sting. The string length must be greater or equal to n.
+
+     //69. Write a JavaScript program to compute the sum of three elements of a given
+     //array of integers of length 3.
+
+     //70. Write a JavaScript program to rotate the elements left of a given array of integers of length 3.
 
     </script>
   </body>
