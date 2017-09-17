@@ -105,10 +105,26 @@
       }
      }
 
+     console.log("66. ---------------------");
      //66. Write a JavaScript program to display the city name if the string
      //begins with "Los" or "New" otherwise return blank.
 
+     console.log(losOrNew("ab"));
+     console.log(losOrNew("Los Angeles"));
+     console.log(losOrNew("New York"));
+     console.log(losOrNew("Dublin"));
 
+     function losOrNew (text){
+       if (text.length < 3){
+         return false;
+       } else {
+         if(text.substr(0, 3) == "Los" || text.substr(0, 3) == "New"){
+           return text;
+         } else {
+           return "";
+         }
+       }
+     }
 
      //67. Write a JavaScript program to create a new string from a given string,
      //removing the first and last characters of the string if the first or last
