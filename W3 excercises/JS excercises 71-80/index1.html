@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+      console.log("71. ---------------------");
+      //71. Write a JavaScript program to check if 1 appears in first or
+      //last position of a given array of integers. The array length must be
+      //greater or equal to 1.
+      console.log(if1([]));
+      console.log(if1([5]));
+      console.log(if1([3, 6, 8]));
+      console.log(if1([1, 6, 8]));
+      console.log(if1([1, 6, 1]));
+      console.log(if1([8, 6, 1]));
+
+      function if1 (arr){
+        if (arr.length < 1) {
+          return false;
+        } else {
+          if(arr[0] == 1 || arr[arr.length-1] == 1){
+            return true;
+          } else {
+            return false;
+          }
+        }
+      }
+
+      //72. Write a JavaScript program to check if the first and last
+      //elements are equal of a given array of integers length 3.
+
+      //73. Write a JavaScript program to reverse the elements of a given
+      //array of integers length 3.
+
+      //74. Write a JavaScript program to find the larger value between the
+      //first or last and set all the other elements with that value.
+      //Display the new array.
+
+      //75. Write a JavaScript program to create a new array taking the middle
+      //elements of the two arrays of integer and each length 3.
+    </script>
+  </body>
+</html>
