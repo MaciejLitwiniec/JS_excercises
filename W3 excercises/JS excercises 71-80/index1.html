@@ -50,12 +50,35 @@
         }
       }
 
+      console.log("73. ---------------------");
       //73. Write a JavaScript program to reverse the elements of a given
       //array of integers length 3.
+      console.log(revArr([3, 5, 2]));
 
+      function revArr(arr){
+        return arr.reverse();
+      }
+
+      console.log("74. ---------------------");
       //74. Write a JavaScript program to find the larger value between the
       //first or last and set all the other elements with that value.
       //Display the new array.
+      console.log(assignGreater([3, 5, 2]));
+      console.log(assignGreater([1, 5, 6]));
+
+      function assignGreater(arr) {
+        if (arr[0] >= arr[arr.length-1]) {
+          for(i = 0; i < arr.length; i++){
+            arr[i] = arr[0];
+          }
+          return arr;
+        } else {
+          for(i = 0; i < arr.length; i++){
+            arr[i] = arr[arr.length-1];
+          }
+          return arr;
+        }
+      }
 
       //75. Write a JavaScript program to create a new array taking the middle
       //elements of the two arrays of integer and each length 3.
