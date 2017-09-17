@@ -109,9 +109,35 @@
       //77. Write a JavaScript program to test if an array of integers
       // of length 2 contains 1 or a 3.
 
-      // console.log("78. ---------------------");
+      console.log(ifContains([1, 2, 3]));
+      console.log(ifContains([5, 2, 3]));
+      console.log(ifContains([5, 5, 2]));
+      console.log(ifContains([1, 1, 1]));
+
+      function ifContains (arr) {
+        if(arr.indexOf(1) != -1 || arr.indexOf(3) != -1){
+          return true;
+        } else {
+          return false;
+        }
+      }
+
+      console.log("78. ---------------------");
       //78. Write a JavaScript program to test if an array of
       //integers of length 2 does not contain 1 or a 3.
+      console.log(ifNotContains([1, 2, 3]));
+      console.log(ifNotContains([5, 2, 3]));
+      console.log(ifNotContains([5, 5, 2]));
+      console.log(ifNotContains([1, 1, 1]));
+
+      function ifNotContains (arr) {
+        if(arr.indexOf(1) == -1 && arr.indexOf(3) == -1){
+          return true;
+        } else {
+          return false;
+        }
+      }
+
 
       // console.log("79. ---------------------");
       //79. Write a JavaScript program to test if a given array of
