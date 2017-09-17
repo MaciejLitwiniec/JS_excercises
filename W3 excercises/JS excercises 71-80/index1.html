@@ -138,15 +138,32 @@
         }
       }
 
-
-      // console.log("79. ---------------------");
+      console.log("79. ---------------------");
       //79. Write a JavaScript program to test if a given array of
       //integers contains 30 and 40 twice. The array length should be 0, 1, or 2.
+
+      console.log(twice3040([30, 30]));
+      console.log(twice3040([40, 40]));
+      console.log(twice3040([20, 20]));
+      console.log(twice3040([30]));
+
+      function twice3040(arra1) {
+        let a = arra1[0],
+            b = arra1[1];
+        return (a === 30 && b === 30) || (a === 40 && b === 40);
+      }
 
       // console.log("80. ---------------------");
       //80. Write a JavaScript program to swap the first and last elements
       //of a given array of integers. The array length should be at least 1.
+      console.log(swap([1, 2, 3, 4]));
+      console.log(swap([0, 2, 1]));
+      console.log(swap([3])); 
 
+      function swap(arra) {
+        [arra[0], arra[arra.length - 1]] = [arra[arra.length - 1], arra[0]];
+        return arra;
+      }
 
     </script>
   </body>
