@@ -163,10 +163,31 @@
        }
      }
 
-
      console.log("69. ---------------------");
      //69. Write a JavaScript program to compute the sum of three elements of a given
      //array of integers of length 3.
+     console.log(sumOf3([3, 4, 1]));
+     console.log(sumOf3([3, 1]));
+
+     function sumOf3(arr) {
+       if (arr.length < 3) {
+         return false;
+       } else {
+         return arr.reduce((a, b) => a + b, 0);
+       }
+     }
+
+    // w3resource:
+    //  function sum_three(nums){
+    //    return nums[0] + nums[1] + nums[2];
+    //  }
+
+    //stackoverflow
+    //  var sum = [1, 2, 3].reduce(add, 0);
+    //
+    //  function add(a, b) {
+    //    return a + b;
+    //  }
 
      console.log("70. ---------------------");
      //70. Write a JavaScript program to rotate the elements left of a given array of integers of length 3.
