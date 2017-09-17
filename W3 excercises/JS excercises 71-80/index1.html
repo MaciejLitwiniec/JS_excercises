@@ -80,8 +80,48 @@
         }
       }
 
+      console.log("75. ---------------------");
       //75. Write a JavaScript program to create a new array taking the middle
       //elements of the two arrays of integer and each length 3.
+      console.log(combineArr([1,2,3],[4,5,6]));
+
+      function combineArr (arr1, arr2){
+        var newArr = [];
+        newArr.push(arr1[1], arr2[1]);
+        return newArr;
+      }
+
+      console.log("76. ---------------------");
+      //76. Write a JavaScript program to create a new array taking the first
+      //and last elements from a given array of integers and length must be greater or equal to 1.
+      console.log(combineArrays([3,4,5], [6, 7, 8]));
+      console.log(combineArrays([], [6]));
+
+      function combineArrays (arr1, arr2){
+        if (arr1.length < 1 || arr2.length < 1){
+          return false;
+        } else {
+          return [arr1[0], arr1[arr1.length-1], arr2[0], arr2[arr2.length-1]];
+        }
+      }
+
+      console.log("77. ---------------------");
+      //77. Write a JavaScript program to test if an array of integers
+      // of length 2 contains 1 or a 3.
+
+      // console.log("78. ---------------------");
+      //78. Write a JavaScript program to test if an array of
+      //integers of length 2 does not contain 1 or a 3.
+
+      // console.log("79. ---------------------");
+      //79. Write a JavaScript program to test if a given array of
+      //integers contains 30 and 40 twice. The array length should be 0, 1, or 2.
+
+      // console.log("80. ---------------------");
+      //80. Write a JavaScript program to swap the first and last elements
+      //of a given array of integers. The array length should be at least 1.
+
+
     </script>
   </body>
 </html>
