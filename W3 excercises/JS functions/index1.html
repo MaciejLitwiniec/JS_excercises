@@ -6,19 +6,54 @@
   </head>
   <body>
     <script>
+      console.log("1. -----------------");
       //1. Write a JavaScript function that reverse a number.
       //Example x = 32243;
       //Expected Output : 34223
+      console.log("Entered number 32243");
+      console.log(reverse_number(32243));
 
-      //console.log("-----------------------");
+      function reverse_number(n){
+        n = n + "";
+        return n.split("").reverse().join("");
+      }
+
+      console.log("2. -----------------------");
       //2. Write a JavaScript function that checks whether a passed string is palindrome or not?
       //A palindrome is word, phrase, or sequence that reads the same backward as forward, e.g., madam or nurses run.
+      console.log(isPalindrome("kajak"));
+      console.log(isPalindrome("test"));
 
+      function isPalindrome(input){
+        var text = input.replace(/\s/g, '');
+        var textMirrored = text.split("").reverse().join("");
+        if(text == textMirrored){
+          return true;
+        } else {
+          return false;
+        }
+      }
+
+      console.log("3. -----------------------");
       //3. Write a JavaScript function that generates all combinations of a string. Go to the editor
       //Example string : 'dog'
       //Expected Output : d,do,dog,o,og,g
+      console.log(combo("dogs"));
 
-       
+      function combo(string) {
+        var set = []; // this is what we will add the substrings to
+        for (i = string.length; i > 0; i--) { // "i" is going to be the end point of our substring, so this makes sure we go through all possible iterations
+          for (j = 0; j < i; j++) { //"j" is the start point of our substring, so this makes sure it goes through all possible iterations without overtaking our end point
+            var instance = string.substring(j,i); // this makes the substring. yay.
+            set.push(instance); // this adds the substring to our array
+          }
+        }
+        set.join(", ");
+        return(set);
+      }
+
+
+
     </script>
   </body>
 </html>
