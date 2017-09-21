@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap Grid system</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style type="text/css">
+      .green {
+        background-color: green;
+        border: 1px solid black;
+      }
+      .orange {
+        background-color: orange;
+        border: 1px dashed black;
+        height: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ==================================    -->
+    <!--             Objectives                -->
+    <!-- 1. Understand purpose of Grid system  -->
+    <!-- 2. Understand the 4 different sizes   -->
+    <!--       3. Write Nested Grids           -->
+
+    <div class="container">
+      <!-- <div class="row">
+        <div class="col-lg-1 col-md-2 green">Col Lg 1</div>
+        <div class="col-lg-1 col-md-2 green">Col Lg 1</div>
+        <div class="col-lg-1 col-md-2 green">Col Lg 1</div>
+        <div class="col-lg-1 col-md-2 green">Col Lg 1</div>
+        <div class="col-lg-1 col-md-2 green">Col Lg 1</div>
+        <div class="col-lg-1 col-md-2 green">Col Lg 1</div>
+        <div class="col-lg-1 col-md-2 green">Col Lg 1</div>
+        <div class="col-lg-1 col-md-2 green">Col Lg 1</div>
+        <div class="col-lg-1 col-md-2 green">Col Lg 1</div>
+        <div class="col-lg-1 col-md-2 green">Col Lg 1</div>
+        <div class="col-lg-1 col-md-2 green">Col Lg 1</div>
+        <div class="col-lg-1 col-md-2 green">Col Lg 1</div>
+      </div> -->
+      <div class="row">
+        <!-- Bootstrap will know, that if col-lg-x is not specified, then it will take the value from col-md-X-->
+        <div class="col-md-3 col-sm-6 green">
+          <!-- Nested Grid -->
+          <div class="row">
+            <div class="col-lg-6 orange">First half</div>
+            <div class="col-lg-6 orange">Other half</div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 green">Tour Date!</div>
+        <div class="col-md-3 col-sm-6 green">Tour Date!</div>
+        <div class="col-md-3 col-sm-6 green">
+          <div class="row">
+            <div class="col-lg-2 orange"></div>
+            <div class="col-lg-2 orange"></div>
+            <div class="col-lg-2 orange"></div>
+            <div class="col-lg-2 orange"></div>
+            <div class="col-lg-2 orange"></div>
+            <div class="col-lg-2 orange"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
