@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Gallery</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+
+    <!-- <nav class="navbar navbar-default"> -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+      <div class="navbar-header">
+        <!-- hamburger -->
+        <!-- data-target is pointing to items to be shown in hamburger after collapse -->
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> Images</a>
+      </div>
+      <!-- data-taget pointing here -->
+      <div class="collapse navbar-collapse" id="bs-nav-demo">
+        <ul class="nav navbar-nav">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Sign up</a></li>
+          <li><a href="#">Log in</a></li>
+        </ul>
+      </div>
+    </div>
+    </nav>
+
+    <div class="container">
+      <div class="jumbotron">
+        <h1><i class="fa fa-camera-retro" aria-hidden="true"></i></span> The image gallery</h1>
+        <p>A bunch of beautiful images taken from some other page</p>
+      </div>
+
+      <!-- Dont need to put define another row, bootstrap will do just fine -->
+      <div class="row">
+        <div class="col-lg-4 col-sm-6">
+          <div class="thumbnail">
+              <img src="http://i.imgur.com/qK42fUu.jpg" alt="bridge">
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="thumbnail">
+              <img src="http://i.imgur.com/qK42fUu.jpg" alt="bridge">
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="thumbnail">
+              <img src="http://i.imgur.com/qK42fUu.jpg" alt="bridge">
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="thumbnail">
+              <img src="http://i.imgur.com/qK42fUu.jpg" alt="bridge">
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="thumbnail">
+              <img src="http://i.imgur.com/qK42fUu.jpg" alt="bridge">
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="thumbnail">
+              <img src="http://i.imgur.com/qK42fUu.jpg" alt="bridge">
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="thumbnail">
+              <img src="http://i.imgur.com/qK42fUu.jpg" alt="bridge">
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="thumbnail">
+              <img src="http://i.imgur.com/qK42fUu.jpg" alt="bridge">
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="thumbnail">
+              <img src="http://i.imgur.com/qK42fUu.jpg" alt="bridge">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="bootstrap.js"></script>
+  </body>
+</html>
